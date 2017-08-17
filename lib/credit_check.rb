@@ -1,9 +1,8 @@
 class CreditCard
-
+  attr_reader :card_num
   def initialize(card_num)
     @card_num = card_num
   end
-
 
   def reverse_number(card_num)
     card_num.reverse
@@ -54,5 +53,4 @@ class CreditCard
       "The number is invalid!"
     end
   end
-
 end
